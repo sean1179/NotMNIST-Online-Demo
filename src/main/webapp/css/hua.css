@@ -1,0 +1,12 @@
+body{
+	margin: 0px;
+	padding: 0px;
+}
+#hua_img{
+	width: 280px;
+	height: 280px;
+	cursor:crosshair;
+}
+#show{
+	border: 1px solid #9FCDFF;
+}

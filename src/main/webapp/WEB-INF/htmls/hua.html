@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/hua.css" />
+	</head>
+	<body>
+		<h1></h1>
+		<div class="container" id="father_container">
+			<div class="row justify-content-center">
+				<div class="col-auto">
+					<canvas id="hua_img" width="280px" height="280px"></canvas>
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-auto">
+					<span id="coordinates-1"></span>
+					<!--<span id="coordinates-2"></span>-->
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-auto">
+					<a class="btn btn-info" id="submit_btn" href="#">提交</a>
+					<a class="btn btn-info" id="clean_btn" href="#">清除</a>
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-auto text-center">
+					<div id="message">在上面的黑框框写完字母，点击提交就可以了哟(づ￣ 3￣)づ</div>
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-auto">
+					<canvas id="show" width="28px" height="28px"></canvas>
+				</div>
+			</div>
+			<br />
+			<div class="row justify-content-center">
+				<div class="col-12">
+					<table class="table table-hover text-center">
+						<thead>
+							<tr>
+								<th>字母</th>
+								<th>A</th>
+								<th>B</th>
+								<th>C</th>
+								<th>D</th>
+								<th>E</th>
+								<th>F</th>
+								<th>G</th>
+								<th>H</th>
+								<th>I</th>
+								<th>J</th>
+							</tr>
+						</thead>
+						<tbody id="guess_tbody">
+							<tr>
+								<th>概率</th>
+								<td>0.00</td>
+								<td>0.00</td>
+								<td>0.00</td>
+								<td>0.00</td>
+								<td>0.00</td>
+								<td>0.00</td>
+								<td>0.00</td>
+								<td>0.00</td>
+								<td>0.00</td>
+								<td>0.00</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="row justify-content-center text-center" id="feedback" style="display: none;">
+				<div class="col-auto">
+					<p>能告诉我正确答案吗？≖‿≖✧,点击下面对应的字母按钮就可以了（～￣▽￣～）</p>
+					<div id="answer_btns" class="btn-group btn-group-toggle" data-toggle="buttons">
+					  <label class="btn btn-secondary">
+					    <input type="radio" name="answer" data-answer = "A"  autocomplete="off"> A
+					  </label>
+					  <label class="btn btn-secondary">
+					    <input type="radio" name="answer" data-answer = "B" autocomplete="off"> B
+					  </label>
+					  <label class="btn btn-secondary">
+					    <input type="radio" name="answer" data-answer = "C" autocomplete="off"> C
+					  </label>
+					  <label class="btn btn-secondary">
+					    <input type="radio" name="answer" data-answer = "D" autocomplete="off"> D
+					  </label>
+					  <label class="btn btn-secondary">
+					    <input type="radio" name="answer" data-answer = "E" autocomplete="off"> E
+					  </label>
+					  <label class="btn btn-secondary">
+					    <input type="radio" name="answer" data-answer = "F" autocomplete="off"> F
+					  </label>
+					  <label class="btn btn-secondary">
+					    <input type="radio" name="answer" data-answer = "G" autocomplete="off"> G
+					  </label>
+					  <label class="btn btn-secondary">
+					    <input type="radio" name="answer" data-answer = "H" autocomplete="off"> H
+					  </label>
+					  <label class="btn btn-secondary">
+					    <input type="radio" name="answer" data-answer = "I" autocomplete="off"> I
+					  </label>
+					  <label class="btn btn-secondary">
+					    <input type="radio" name="answer" data-answer = "J" autocomplete="off"> J
+					  </label>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="js/jquery-2.2.3.min.js" ></script>
+	<script type="text/javascript" src="js/bootstrap.min.js" ></script>
+	<script type="text/javascript" src="js/eventUtil.js" ></script>
+	<script type="text/javascript" src="js/json2.js" ></script>
+	<script type="text/javascript" src="js/hua.js" ></script>
+</html>
